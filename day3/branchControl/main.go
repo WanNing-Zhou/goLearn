@@ -62,6 +62,14 @@ func main() {
 
 	for i := 1; i < 10; i++ {
 		fmt.Println(i)
+		if i == 2 {
+			goto label1
+		}
 	}
+
+	// goto : 一般不使用goto, 容易造程序的混乱
+
+label1:
+	fmt.Println("kakxi ")
 
 }
